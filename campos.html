@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h2> HTML FORMS </h2>
+		<form action="/action_page.php">
+			<label for="fname"> INFORME O SEU NOME :</label><br>
+			<input type="text" id="fname" name="fname" value=""><br>
+			<label for="lname"> INFORME O SEU SOBRENOME :</label><br>
+			<input type="text" id="lname" name="lname" value=""><br>
+			<label for="lname"> INFORME O SEU EMAIL ? :</label><br>
+			<input type="text" id="fname" name="fname" value=""><br>
+			<br>
+			<h2> Radio Buttons </h2>
+        	<p>Qual seu dispositivo que você está usando?</p>
+        
+        	<input type="radio" id="Celular" name="fav_language" value="Celular">
+			 <label for="html">Celular</label><br>
+ 			<input type="radio" id="Computadpor" name="fav_language" value="Computador">
+ 			<label for="css"> Computador</label><br>
+ 			<input type="radio" id="Tablet" name="fav_language" value="Tablet">
+			<label for="javascript">Tablet</label><br><br>
+ 		 
+			<br>
+			<h2>Checkboxes</h2>
+			<p> Qual o seu curso técnico? </p>
+  			<input type="checkbox" id="Adm" name="Adm" value="Adm">
+  			<label for="vehicle1"> Administração </label><br>
+  			<input type="checkbox" id=" Enf " name="Enf" value="Enf">
+  			<label for="vehicle2">  Enfermagem</label><br>
+  			<input type="checkbox" id="Inf" name="Inf" value="Inf">
+  			<label for="vehicle3"> Informática </label><br><br>
+  			<input type="button" onclick="alert(' Obrigado por responde  a pesquisa !')" value=" enviar">
+			<input type="reset">
+			<br>		
+			<h2>Show a Color Picker</h2>
+			 <label for="favcolor">Seleciona sua cor favorita :</label>
+  			<input type="color" id="favcolor" name="favcolor" value="">
+			<br>
+			<h2>Local Date Field</h2>
+  			<label for="birthdaytime"> Digite sua data e hora que está respondendo a pesquisa  :</label>
+  			<input type="datetime-local" id="birthdaytime" name="birthdaytime">
+			<br>
+			<h2>File upload</h2>
+  			<label for="myfile"> Seleciona uma foto sua</label>
+  			<input type="file" id="myfile" name="myfile"><br><br>
+			<br>
+		</form> 
+        <form>
+            <h2>Checkbox</h2>
+            <p>Qual o veículo que eu tenho?</p>
+            <input type="checkbox" name="veiculo1" value="bicicleta">Eu tenho uma bicicleta<br>
+            <input type="checkbox" name="veiculo2" value="carro">Eu tenho um carro<br>
+            <input type="checkbox" name="veiculo3" value="moto">Eu tenho uma moto<br>
+        </form>
+        <form>
+            <h2> Radio </h2>
+            <p>Qual sua idade?</p>
+            <input type="radio" name="idade" value="18_22">18 a 22 <br>
+            <input type="radio" name="idade" value="23_30">23 a 30 <br>
+            <input type="radio" name="idade" value="mais31">acima de 31<br>
+        </form>
+        <form>
+            <h2> telefone</h2>
+            <p>qual o seu telefone?</p>
+            <div class="field">
+                <label for="telefone">Seu Telefone:</label>
+                <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+            </div>
+            </form>
+            <form>
+                <h2>range</h2>
+                Defina seu nível de satisfação:<br>
+                pouco satisfeito
+                <input type="range" name="satisfacao" min="0" max="10">
+                muito satisfeito
+            </form>
+            <h2>Password field</h2>
+
+<p>The <strong>input type="password"</strong> defina sua senha:</p>
+
+<form action="/action_page.php">
+  <label for="username">nome:</label><br>
+  <input type="text" id="nome" name="nome"><br>
+  <label for="pwd">senha:</label><br>
+  <input type="senha" id="pwd" name="pwd"><br><br>
+  <input type="submit" value="enviar">
+</form>
+<h2>Date Field Restrictions</h2>
+
+<p>insira as respectivas datas:</p>
+
+<form action="/action_page.php">
+  <label for="datemin">insira uma data após 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+  <label for="datemax">insira uma data antes 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+<h2>Month Field</h2>
+
+<p>The <strong>input type="month"</strong> insira sua data de aniversário.</p>
+
+<form action="/action_page.php">
+  <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+  <input type="submit" value="Submit">
+</form>
+<form>
+    <h2>Input Type Url</h2>
+    <label for="homepage">Adicione algum url:</label>
+    <input type="url" id="homepage" name="homepage">
+  </form>
+  <h1>File upload</h1>
+<p>Show a file-select field which allows a file to be chosen for upload:</p>
+<form action="/action_page.php">
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<h1>Um Campo Oculto (procure no código-fonte)</h1>
+
+<form action="/action_page.php">
+  <label for="fname">informe seu nome completo?:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="hidden" id="custId" name="custId" value="3487">
+  <input type="submit" value="Submit">
+</form>
+<form action="/action_page.php">
+	<label for="fname">First name: </label>
+	<input type="text" id="fname" name="fname"><br><br>
+	<label for="lname">Last name: </label>
+	<input type="text" id="lname" name="lname"><br><br>
+	<input type="image" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fassets.goal.com%2Fv3%2Fassets%2Fbltcc7a7ffd2fbf71f5%2Fblt01727e3e4a54ab39%2F6321f0040c7ca54c537c917f%2FErling_Haaland(5).jpg&imgrefurl=https%3A%2F%2Fwww.goal.com%2Fbr%2Fnot%25C3%25ADcias%2Fa-comemoracao-misteriosa-de-haaland-no-manchester-city%2Fblt445b6bcf53652875&tbnid=vsJq_2XWhAo04M&vet=12ahUKEwirxbTyju_6AhXrq5UCHYK4A_MQMygRegUIARDhAQ..i&docid=02TK_YYyMtmscM&w=1920&h=1080&q=haaland%20imagem%20city&ved=2ahUKEwirxbTyju_6AhXrq5UCHYK4A_MQMygRegUIARDhAQ" alt="Submit" width="48" height="48">
+  </form>
+  <h2>Search Field</h2>
+<p>The <strong>input type="search"</strong> is used for search fields (digite um link de pesquisa):</p>
+
+<form action="/action_page.php">
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+  <input type="submit" value="Submit">
+</form>
+<h1>input "time"</h1>
+
+<p>The <strong>input type="time"</strong> selecione um horário sem fuso horário:</p>
+
+<p>If the browser supports it, a time picker pops up when entering the input field.</p>
+
+<form action="/action_page.php">
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt">
+  <input type="submit" value="Submit">
+</form>
+<h1>Display a Week Input Control</h1>
+
+<p>The <strong>input type="week"</strong> selecione uma semana e um ano.</p>
+
+<p>If the browser supports it, a date picker pops up when entering the input field.</p>
+
+<form action="/action_page.php">
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+  <input type="submit" value="Submit">
+</form>
+<h2>Local Date Field</h2>
+
+<p>The <strong>input type="datetime-local"</strong> digite data e hora sem fuso horário.</p>
+
+<form action="/action_page.php">
+  <label for="birthdaytime">Birthday (date and time):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+  <input type="submit" value="Submit">
+</form>
+<h2>Submit Button</h2>
+
+<p>The <strong>input type="submit"</strong> defines a button for submitting form data to a form-handler:</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+
+	</body>
+</html>
+
